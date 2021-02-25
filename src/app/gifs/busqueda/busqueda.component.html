@@ -1,0 +1,28 @@
+<h5>
+  Buscar
+</h5>
+<div class="row w-100 m-0 p-0 align-items-center">
+  <div class="col-md-10 col-sm-12 order-12 order-md-1">
+    <input type="text" class="form-control" placeholder="Buscar {{ searching }}..." (keyup.enter)="buscar(txtBuscar.value)" #txtBuscar>
+  </div>
+  <div class="col-md-2 col-sm-12 order-12 order-md-2 pt-md-0 pt-sm-3 btn-search text-right">
+    <button class="btn btn-secondary" (click)="buscar(txtBuscar.value)">Vamos!!!</button>
+  </div>
+  <div class="col-sm-6 col-md-6 order-12 order-md-3 pt-2">
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" (change)="GetStats($event)" checked>
+      <label class="form-check-label" for="flexSwitchCheckDefault" >{{ searching }}</label>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-6 order-12 order-md-4 pt-2">
+    <select class="form-select" (change)="changeCount($event)">
+      <option value="5" selected>5</option>
+      <option value="10">10</option>
+      <option value="25">25</option>
+      <option value="50">50</option>
+    </select>
+  </div>
+
+</div>
+
+

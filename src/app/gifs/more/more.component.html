@@ -1,0 +1,10 @@
+<div class="row w-100 m-0 p-0 mt-5 mb-5" *ngIf="isSearch">
+  <div class="col-6 text-center">
+    <button class="btn btn-secondary" [disabled]="prev === 0 ? true : false" (click)="buttonPrev()">PREV</button>
+  </div>
+  <div class="col-6 text-center">
+    <button class="btn btn-secondary" [disabled]="(next === 0 || (prev+next) >= total ) ? true : false" (click)="buttonNext()">NEXT</button>
+  </div>
+</div>
+
+

@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+select{
+  max-width: 140px;
+  float:right;
+}
+
+
+#sidebar {
+  height: 100%;
+  min-height: 100vh;
+  min-width: 180px;
+}
+
+@media screen and (max-width: 575px) {
+  .btn-search{
+    padding-top: 1rem !important;
+  }
+
+  #sidebar {
+    min-width: 90px;
+  }
+}
